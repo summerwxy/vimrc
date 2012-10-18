@@ -28,4 +28,16 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+" call Pathogen.vim
+call pathogen#infect()
+
+" 0_o's Settings
+syntax on
+filetype plugin indent on
+colors inkpot 		" colors
+
+
+" NERD tree: F11 toggle
+autocmd vimenter * if !argc() | NERDTree | endif
+nmap <F11> :NERDTreeToggle<CR>
 
