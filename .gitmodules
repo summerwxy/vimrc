@@ -16,3 +16,6 @@
 [submodule "vimfiles\\bundle\\minibufexpl"]
 	path = vimfiles\\bundle\\minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vimfiles\\bundle\\AutoComplPop"]
+	path = vimfiles\\bundle\\AutoComplPop
+	url = https://github.com/vim-scripts/AutoComplPop.git
