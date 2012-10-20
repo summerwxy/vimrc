@@ -33,11 +33,25 @@ call pathogen#infect()
 
 " 0_o's Settings
 syntax on
-filetype plugin indent on
-colors inkpot 		" colors
-
+filetype on			" enables filetype detection
+filetype plugin indent on	" enables filetype specific plugins
+colors inkpot 			" colors
+set nowrap
+set number
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=8
+set smartindent
+set cindent
+set autoindent
+set history=50
+set smarttab
+set incsearch
+set t_Co=256
 
 " NERD tree: F11 toggle
 autocmd vimenter * if !argc() | NERDTree | endif
 nmap <F11> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['.pyc$', '\~$']
 
