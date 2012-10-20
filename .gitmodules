@@ -19,3 +19,6 @@
 [submodule "vimfiles\\bundle\\AutoComplPop"]
 	path = vimfiles\\bundle\\AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "vimfiles\\bundle\\tabular"]
+	path = vimfiles\\bundle\\tabular
+	url = https://github.com/godlygeek/tabular.git
