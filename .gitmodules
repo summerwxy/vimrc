@@ -1,3 +1,6 @@
 [submodule "vimfiles/bundle/AutoClose"]
 	path = vimfiles/bundle/AutoClose
 	url = https://github.com/vim-scripts/AutoClose.git
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
