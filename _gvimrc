@@ -1,0 +1,125 @@
+" An example for a gvimrc file.
+set nocompatible
+source $VIMRUNTIME/vimrc_example.vim
+behave xterm
+set selectmode=mouse
+set shiftwidth=2
+"set fileencoding=utf-8
+"set enc=cp950
+set lines=38
+set columns=101
+set gfn=Courier_New:h14
+set noincsearch
+set nobackup
+set foldmethod=manual
+" The commands in this are executed when the GUI is started.
+"
+" Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Last change:	1999 Feb 02
+"
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.gvimrc
+"             for Amiga:  s:.gvimrc
+"  for MS-DOS and Win32:  $VIM\_gvimrc
+
+" Make external commands work through a pipe instead of a pseudo-tty
+"set noguipty
+
+" set the X11 font to use
+" set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
+
+" Make command line two lines high
+set ch=2
+
+" Make shift-insert work like in Xterm
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
+
+autocmd Filetype tex call Tex_setup()
+autocmd Bufread *.ctx setf tex
+
+function Tex_setup()
+  com Make call Compile_latex()
+  com Slide call Compile_forslide()
+  com PDF  call Compile_latex2pdf()
+endfunction
+
+function Compile_latex()
+  let texfilename = expand("%:p:r")
+  let texextname = expand("%:p:e")
+  exec "silent !del" texfilename .".dvi"
+  exec "silent !del" texfilename .".ps"
+  if  texextname == "ctx"
+    exec "silent !del" texfilename .".tex"
+    exec "silent !cwtex" texfilename .".ctx"
+  endif
+  "exec "silent !latex" texfilename .".tex"
+  exec "silent !latex" texfilename .".tex"
+  exec "silent !dvips -Ppdf -t a4" texfilename .".dvi"
+  "if  texextname != "ctx"
+  "  exec "silent !start gswin32" texfilename .".ps"
+  "endif
+endfunction
+
+
+function Compile_forslide()
+  let texfilename = expand("%:p:r")
+  let texextname = expand("%:p:e")
+  exec "silent !del" texfilename .".dvi"
+  exec "silent !del" texfilename .".ps"
+  if  texextname == "ctx"
+    exec "silent !del" texfilename .".tex"
+    exec "silent !cwtex" texfilename .".ctx"
+  endif
+  exec "silent !latex" texfilename .".tex"
+  "exec "silent !pdflatex" texfilename .".tex"
+  exec "silent !dvips -t landscape -t a4 -Ppdf" texfilename .".dvi"
+  exec "silent !ps2pdf" texfilename .".ps" texfilename.".pdf"
+  exec "silent! !start C:\\Program\ Files\\Adobe\\Acrobat\ 6.0\\Reader\\AcroRd32.exe " texfilename .".pdf"
+endfunction
+
+function Compile_latex2pdf()
+  let texfilename = expand("%:p:r")
+  exec "silent !del" texfilename .".pdf"
+  exec "silent !ps2pdf" texfilename .".ps" texfilename.".pdf"
+  "exec "silent !dvipdfm" texfilename .".dvi"
+  exec "silent! !start C:\\Program\ Files\\Adobe\\Acrobat\ 6.0\\Reader\\AcroRd32.exe " texfilename .".pdf"
+endfunction
+
+" Only do this for Vim version 5.0 and later.
+if version == 500
+
+  " I like highlighting strings inside C comments
+  let c_comment_strings=1
+
+  " Switch on syntax highlighting.
+  syntax on
+
+  " Switch on search pattern highlighting.
+  set hlsearch
+
+  " For Win32 version, have "K" lookup the keyword in a help file
+  "if has("win32")
+  "  let winhelpfile='windows.hlp'
+  "  map K :execute "!start winhlp32 -k <cword> " . winhelpfile <CR>
+  "endif
+
+  " Hide the mouse pointer while typing
+  set mousehide
+
+  " Set nice colors
+  " background for normal text is light grey
+  " Text below the last line is darker grey
+  " Cursor is green
+  " Constants are not underlined but have a slightly lighter background
+  highlight Normal guibg=#010101 guifg=#ffffff
+  highlight Cursor guibg=#ffffff guifg=Red
+  highlight NonText guibg=#010101
+  highlight Constant gui=NONE guibg=#010101 guifg=#ffffff
+  highlight Special gui=NONE guibg=#ffffff guifg=#010101
+  nmap l <End>
+  highlight SpellErrors ctermfg=Red guifg=Red cterm=underline gui=underline term=reverse
+
+endif
+
