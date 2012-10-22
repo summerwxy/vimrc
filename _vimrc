@@ -1,4 +1,4 @@
-set nocompatible
+﻿set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -33,15 +33,15 @@ call pathogen#infect()
 
 " 0_o's Settings
 syntax on
-filetype on			" enables filetype detection
+filetype on			        " enables filetype detection
 filetype plugin indent on	" enables filetype specific plugins
-colors inkpot 			" colors
+colors inkpot 			    " colors
 set nowrap
 set number
 set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=8
+set shiftwidth=2
+set softtabstop=2
+set tabstop=4
 set smartindent
 set cindent
 set autoindent
@@ -54,4 +54,15 @@ set t_Co=256
 autocmd vimenter * if !argc() | NERDTree | endif
 nmap <F11> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['.pyc$', '\~$']
+
+" minibufexpl.vim: F10 toggle
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1 
+map <F10> :TMiniBufExplorer<CR>
+
+" AutoComplPop
+let g:acp_behaviorSnipmateLength = 1
+
 
