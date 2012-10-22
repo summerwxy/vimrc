@@ -21,3 +21,4 @@ vimrc
       return snips
     endf
   <
+* vimwiki
