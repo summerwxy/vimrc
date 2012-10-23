@@ -49,12 +49,19 @@ set history=50
 set smarttab
 set incsearch
 set t_Co=256
-
-language english
 set selectmode=mouse
-set fileencoding=taiwan
-set encoding=utf8
-set termencoding=taiwan
+
+
+set termencoding=utf-8
+set encoding=utf-8
+set fileencodings=utf-8,taiwan,chinese,latin-1
+" 解決 console 輸出亂碼 zh_TW.UTF-8, en_US.UTF-8
+language messages zh_TW.utf-8   " set the language of the message / ui (vim)
+set langmenu=zh_TW.UTF-8        " sets the language of the menu (gvim)
+" 解決 menu 亂碼, 必須放在 set langmenu 底下, set langmenu 才會有效果
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
 
 " NERD tree: F11 toggle
 autocmd vimenter * if !argc() | NERDTree | endif
