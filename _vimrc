@@ -82,5 +82,9 @@ let g:acp_behaviorSnipmateLength = 1
 " Matrix Screensaver
 nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
 
+" #1F-LVqua (Editor) [ptt.cc] 
 " load templates by file type
 au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl  
+
+" Powerline
+set laststatus=2

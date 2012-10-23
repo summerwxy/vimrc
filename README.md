@@ -31,7 +31,7 @@ Plugins
         call extend(snips, get(s:snippets, scope, {}), 'keep')
         call extend(snips, get(s:multi_snips, scope, {}), 'keep')
       endfor
-      return snips
+     return snips
     endf
   ```
 * vimwiki

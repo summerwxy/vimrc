@@ -28,3 +28,6 @@
 [submodule "vimfiles/bundle/matrix"]
 	path = vimfiles/bundle/matrix
 	url = https://github.com/uguu-org/vim-matrix-screensaver.git
+[submodule "vimfiles/bundle/powerline"]
+	path = vimfiles/bundle/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
