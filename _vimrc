@@ -52,6 +52,7 @@ set t_Co=256
 set selectmode=mouse
 set nobackup                    " no backup files
 
+
 set termencoding=utf-8
 set encoding=utf-8
 set fileencodings=utf-8,taiwan,chinese,latin-1
@@ -78,4 +79,8 @@ map <F10> :TMiniBufExplorer<CR>
 " AutoComplPop
 let g:acp_behaviorSnipmateLength = 1
 
+" Matrix Screensaver
+nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
 
+" load templates by file type
+au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl  
