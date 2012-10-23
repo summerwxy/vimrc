@@ -1,10 +1,10 @@
-vimrc
+ï»¿vimrc
 =====
 
 * nerdtree
 * AutoClose
 * xmledit 
-  - ÒªÓ›µÃÒªÑ}Ñu ftplugin ÑeÃæµÄ™n°¸
+  - è¦è¨˜å¾—è¦è¤‡è£½ ftplugin è£¡é¢çš„æª”æ¡ˆ
 * snipMate
 * Zen Coding
 * AutoComplPop

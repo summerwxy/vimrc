@@ -50,6 +50,12 @@ set smarttab
 set incsearch
 set t_Co=256
 
+language english
+set selectmode=mouse
+set fileencoding=taiwan
+set encoding=utf8
+set termencoding=taiwan
+
 " NERD tree: F11 toggle
 autocmd vimenter * if !argc() | NERDTree | endif
 nmap <F11> :NERDTreeToggle<CR>
