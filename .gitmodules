@@ -34,3 +34,6 @@
 [submodule "vimfiles/bundle/colorselector"]
 	path = vimfiles/bundle/colorselector
 	url = https://github.com/c9s/colorselector.vim.git
+[submodule "vimfiles/bundle/csscolor"]
+	path = vimfiles/bundle/csscolor
+	url = https://github.com/ap/vim-css-color.git

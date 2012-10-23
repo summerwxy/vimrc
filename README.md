@@ -39,3 +39,4 @@ Plugins
 * ColorSelector
  - :SelectColorS    
  - C-n, C-p, C-q
+* css color
