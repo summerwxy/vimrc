@@ -12,6 +12,8 @@ set gfn=Courier_New:h14
 set noincsearch
 set nobackup
 set foldmethod=manual
+
+
 " The commands in this are executed when the GUI is started.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>

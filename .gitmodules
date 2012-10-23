@@ -25,3 +25,12 @@
 [submodule "vimfiles/bundle/vimwiki"]
 	path = vimfiles/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
+[submodule "vimfiles/bundle/matrix"]
+	path = vimfiles/bundle/matrix
+	url = https://github.com/uguu-org/vim-matrix-screensaver.git
+[submodule "vimfiles/bundle/powerline"]
+	path = vimfiles/bundle/powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vimfiles/bundle/colorselector"]
+	path = vimfiles/bundle/colorselector
+	url = https://github.com/c9s/colorselector.vim.git
