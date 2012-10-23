@@ -7,21 +7,21 @@
 [submodule "vimfiles/bundle/xmledit"]
 	path = vimfiles/bundle/xmledit
 	url = https://github.com/sukima/xmledit.git
-[submodule "vimfiles\\bundle\\snipmate"]
-	path = vimfiles\\bundle\\snipmate
+[submodule "vimfiles/bundle/snipmate"]
+	path = vimfiles/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "vimfiles\\bundle\\zencoding"]
-	path = vimfiles\\bundle\\zencoding
+[submodule "vimfiles/bundle/zencoding"]
+	path = vimfiles/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
-[submodule "vimfiles\\bundle\\minibufexpl"]
-	path = vimfiles\\bundle\\minibufexpl
+[submodule "vimfiles/bundle/minibufexpl"]
+	path = vimfiles/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "vimfiles\\bundle\\AutoComplPop"]
-	path = vimfiles\\bundle\\AutoComplPop
+[submodule "vimfiles/bundle/AutoComplPop"]
+	path = vimfiles/bundle/AutoComplPop
 	url = https://github.com/vim-scripts/AutoComplPop.git
-[submodule "vimfiles\\bundle\\tabular"]
-	path = vimfiles\\bundle\\tabular
+[submodule "vimfiles/bundle/tabular"]
+	path = vimfiles/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "vimfiles\\bundle\\vimwiki"]
-	path = vimfiles\\bundle\\vimwiki
+[submodule "vimfiles/bundle/vimwiki"]
+	path = vimfiles/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
