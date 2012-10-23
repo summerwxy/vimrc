@@ -50,7 +50,7 @@ set smarttab
 set incsearch
 set t_Co=256
 set selectmode=mouse
-
+set nobackup                    " no backup files
 
 set termencoding=utf-8
 set encoding=utf-8
