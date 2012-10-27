@@ -32,6 +32,7 @@ endfunction
 call pathogen#infect()
 
 " 0_o's Settings
+set t_Co=256
 syntax on
 filetype on			        " enables filetype detection
 filetype plugin indent on	" enables filetype specific plugins
@@ -48,7 +49,6 @@ set autoindent
 set history=50
 set smarttab
 set incsearch
-set t_Co=256
 set selectmode=mouse
 set nobackup                    " no backup files
 
@@ -90,6 +90,12 @@ au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl
 set laststatus=2
 
 
-
-
+" F8 顯示/隱藏 gvim 工具列與功能列
+map <silent> <F8> :if &guioptions =~# 'T' <Bar>
+\set guioptions-=T <Bar>
+\set guioptions-=m <Bar>
+\else <Bar>
+\set guioptions+=T <Bar>
+\set guioptions+=m <Bar>
+\endif<CR>
 
