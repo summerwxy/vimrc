@@ -40,3 +40,5 @@ Plugins
  - :SelectColorS    
  - C-n, C-p, C-q
 * css color
+* fugitive
+* ctrlp

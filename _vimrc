@@ -88,3 +88,8 @@ au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl
 
 " Powerline
 set laststatus=2
+
+
+
+
+
