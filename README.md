@@ -42,6 +42,7 @@ Plugins
 * css color
 * fugitive
 * ctrlp
+* dbext
 
 * F8 顯示/切換 工具列, 功能列
 * F9 Martix Screensaver

@@ -32,6 +32,7 @@ endfunction
 call pathogen#infect()
 
 " 0_o's Settings
+let mapleader = ","
 set t_Co=256
 syntax on
 filetype on			        " enables filetype detection
@@ -102,4 +103,10 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 \endif<CR>
 
 
+" dbext
+" Any number of profiles (connections) can be configured using this basic format:
+"   let g:dbext_default_profile_<profile_name> = '<connection string>'
+" Microsoft SQL Server
+let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
+ 
 
