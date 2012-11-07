@@ -38,7 +38,9 @@ filetype on			        " enables filetype detection
 filetype plugin indent on	" enables filetype specific plugins
 colors inkpot 			    " colors
 set nowrap
-set number
+set relativenumber
+autocmd InsertEnter * set number
+autocmd InsertLeave * set relativenumber
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -98,4 +100,6 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 \set guioptions+=T <Bar>
 \set guioptions+=m <Bar>
 \endif<CR>
+
+
 
