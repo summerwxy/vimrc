@@ -114,6 +114,8 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 "   let g:dbext_default_profile_<profile_name> = '<connection string>'
 " Microsoft SQL Server
 let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
+" SQLite
+let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
  
 
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
