@@ -88,6 +88,12 @@ nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
 " #1F-LVqua (Editor) [ptt.cc] 
 " load templates by file type
 au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl  
+" http://vim.runpaint.org/typing/using-templates/ 設定有點問題先註解掉
+" Jump between %VAR% placeholders in Normal mode with <Ctrl-p>
+" nnoremap <c-p> /%\u.\{-1,}%<cr>c/%/e<cr>
+" Jump between %VAR% placeholders in Insert mode with <Ctrl-p>
+" inoremap <c-p> <ESC>/%\u.\{-1,}%<cr>c/%/e<cr>
+
 
 " Powerline
 set laststatus=2
