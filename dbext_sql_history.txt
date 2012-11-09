@@ -1,5 +1,0 @@
-dbext history, <enter> or dbl-click to execute, or [q] to quit (history size:50)
-1. select top 100 P_NO, P_NAME from iwill.dbo.PART;
-2. select top 100 * from iwill.dbo.PART;
-3. select top 100 * from PART;
-4. select top 100 * from PART
