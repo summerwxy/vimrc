@@ -116,3 +116,6 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
  
 
+au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
+au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
+
