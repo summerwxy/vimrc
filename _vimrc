@@ -121,3 +121,5 @@ let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=tai
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
 
+" F12 for Gundo
+nnoremap <F12> :GundoToggle<CR>
