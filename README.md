@@ -11,6 +11,31 @@ git reset --hard HEAD
 git submodule update --init
 ```
 
+Install Plugin
+--------------
+```
+git submodule add http://github.com/path/the-plugins.git vimfiles/bundle/plugin-name
+```
+
+Update Plugin
+-------------
+```
+update and pull all submodules
+$ git submodule foreach git checkout master
+$ git submodule foreach git pull
+
+commit update
+$ git commit -a -m "update submodules"
+```
+
+Remove Plugin
+-------------
+```
+1. Remove it from .gitmodules
+2. Remove it from .git/config
+3. Run git rm --cached vimfiles\bundle\module-name
+```
+
 
 Plugins
 -------
@@ -44,6 +69,11 @@ Plugins
 * ctrlp
 * dbext
 * Gundo
+* minibufexpl
+* Power Line
+* tabular
+ 
+ 
 
 * F8 顯示/切換 工具列, 功能列
 * F9 Martix Screensaver
