@@ -39,9 +39,10 @@ filetype on			        " enables filetype detection
 filetype plugin indent on	" enables filetype specific plugins
 colors inkpot 			    " colors
 set nowrap
-set relativenumber
-autocmd InsertEnter * set number
-autocmd InsertLeave * set relativenumber
+set number
+" set number in insert mode / set relative number in normal mode
+"autocmd InsertEnter * set number
+"autocmd InsertLeave * set relativenumber
 set expandtab
 set shiftwidth=4
 set softtabstop=4
