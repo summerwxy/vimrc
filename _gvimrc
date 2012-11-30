@@ -3,7 +3,7 @@ set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 behave xterm
 set selectmode=mouse
-set shiftwidth=2
+"set shiftwidth=2
 "set fileencoding=utf-8
 "set enc=cp950
 set lines=38

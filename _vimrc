@@ -43,9 +43,9 @@ set relativenumber
 autocmd InsertEnter * set number
 autocmd InsertLeave * set relativenumber
 set expandtab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set smartindent
 set cindent
 set autoindent
@@ -78,7 +78,7 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 map <F10> :TMiniBufExplorer<CR>
-
+    
 " AutoComplPop
 let g:acp_behaviorSnipmateLength = 1
 
@@ -120,8 +120,11 @@ let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=tai
 
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
+au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
+    
 
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
+
 au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
 
 
