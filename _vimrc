@@ -122,6 +122,7 @@ let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=tai
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
 au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
     
 
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
