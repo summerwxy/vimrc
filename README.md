@@ -73,10 +73,18 @@ Plugins
 * fugitive
     - :Git [command] = :!git [command]
 * Gundo
+    - F12 切換 Gundo 畫面, 可以看到目前為止在本地修改的內容
 * Matrix Screensaver
+    - F9 切換 screensaver
 * minibufexpl
+    - F10 切換是否顯示 minibufexpl
+    - ctrl+tab 可以在打開的文件中切換
+    - 在 minibufexpl 上按 d 可以關閉打開的文件
 * nerdtree
+    - F11 切換 nerdtree 畫面 
+    - 設定 NERDTreeIgnore 可以過濾一些不想顯示的檔案
 * Power Line
+    - !! 沒有出現 ??
 * snipMate
 * tabular
 * vimwiki
@@ -87,11 +95,7 @@ Plugins
  
 
 * F8 顯示/切換 工具列, 功能列
-* F9 Martix Screensaver
 * F10 bar 
-* F11 nerdtree
-* F12 Gundo
-* 
 
 
 
