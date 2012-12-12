@@ -80,7 +80,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 map <F10> :TMiniBufExplorer<CR>
     
-" AutoComplPop
+" AutoComplPop 還必須在 snipmate.vim 加上一小段 code
 let g:acp_behaviorSnipmateLength = 1
 
 " Matrix Screensaver
@@ -110,7 +110,7 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 \endif<CR>
 
 
-" dbext
+" dbext 連線設定
 " Any number of profiles (connections) can be configured using this basic format:
 "   let g:dbext_default_profile_<profile_name> = '<connection string>'
 " Microsoft SQL Server
