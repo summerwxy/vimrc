@@ -84,18 +84,17 @@ Plugins
     - F11 切換 nerdtree 畫面 
     - 設定 NERDTreeIgnore 可以過濾一些不想顯示的檔案
 * Power Line
-    - !! 沒有出現 ??
 * snipMate
+    - 輸入在 snipmate/snippets 裡面定義的字按 Tab 就可以呼叫
+    - TODO: 列一些常用的在這邊
+
 * tabular
 * vimwiki
 * xmledit 
   - 要記得要複製 ftplugin 裡面的檔案 變成 html.vim, htm.vim, gsp.vim...
 * Zen Coding
  
- 
-
-* F8 顯示/切換 工具列, 功能列
-* F10 bar 
+* F8 切換 gvim 工具列, 功能列
 
 
 
