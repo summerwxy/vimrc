@@ -41,7 +41,6 @@ Plugins
 -------
 * AutoClose
     - 包含 `( [ { " '` 這五項符號會自動補成一對
-    - TOINSTALL: 还要安装surround比较顺手
 * AutoComplPop
 
     To enable auto-popup for this completion, add following function to
@@ -93,6 +92,14 @@ Plugins
     - ruby: =b, y, rb, beg, req, #, end, case, when, def, deft, if, ife, elsif, unless, while, for, until, cla, cla-, mod, r, w, rw, Enum, Comp, Forw-, defs, defmm, defd, defds, am, app, usai, usau, array, hash, file, Dir, dir, deli, fil, flao, zip, dow, ste, tim, upt, loo, ea, eadeab, eac-, eai, eaid, eak, eakd, eal, eald, eap, eapd, eas-, easd-, eav, eavd, eawi, eawid, reve, reved, inj, injd, map, mapd, mapwi-, sor, sorb, ran, all, any, cl, col, cold, det, detd, fet, fin, find, fina, finad, gre, sub, sca, scad, max, min, par, pard, rej, rejd, sel, seld, lam, do, :, ope, patfh, unif, optp, opt, tc, ts, as, ase, asne, asid, asio, asko, asn, asnn, asm, asnm, aso, asr, asnr, asrt, ass, asns, ast, asnt, fl, bm-, rep, Md, Ml, deec, Pn-, tra, xml-, xpa, clafn, sinc, nam, tas
     - snippet: snip, msnip
     - bim: header, guard, f, for, wh, if, ife
+* surround
+    - 主要命令有 `cs`, `ds`, `yss`, `ysiw`, `S`
+    - `cs"'` 可以將 "Hello, World!" 改成 'Hello, World!'
+    - `cs'<q>` 可以將 'Hello, World!' 改成 <q>Hello, World!</q>
+    - `dst` 可以將 <q>Hello, World!</q> 改成 Hello, World!
+    - `yss)` 可以將 Hello, World! 改成 (Hello, World!)
+    - `ysiw]` 可以將 (Hello, World!) 改成 ([Hello], World!)
+    - Visual mode 下, `S<div>` 可以將 ([Hello], World!) 改成 <div>([Hello], World!)</div> 
 * tabular
     - 用法 `:Tab /,`
 * vimwiki
