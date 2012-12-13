@@ -132,3 +132,7 @@ au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
 
 " F12 for Gundo
 nnoremap <F12> :GundoToggle<CR>
+
+" zen coding
+let g:use_zen_complete_tag = 1
+
