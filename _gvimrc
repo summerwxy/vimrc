@@ -8,7 +8,10 @@ set selectmode=mouse
 "set enc=cp950
 set lines=38
 set columns=101
-set gfn=Courier_New:h14
+" set gfn=Courier_New:h14 
+" Source_Code_Pro download url: 
+" https://github.com/adobe/Source-Code-Pro/downloads
+set gfn=Source_Code_Pro:h14
 set noincsearch
 set nobackup
 set foldmethod=manual
