@@ -97,9 +97,10 @@ Plugins
     - `cs"'` 可以將 "Hello, World!" 改成 'Hello, World!'
     - `cs'<q>` 可以將 'Hello, World!' 改成 <q>Hello, World!</q>
     - `dst` 可以將 <q>Hello, World!</q> 改成 Hello, World!
-    - `yss)` 可以將 Hello, World! 改成 (Hello, World!)
-    - `ysiw]` 可以將 (Hello, World!) 改成 ([Hello], World!)
-    - Visual mode 下, `S<div>` 可以將 ([Hello], World!) 改成 <div>([Hello], World!)</div> 
+    - `yss)` **整行** 可以將 Hello, World! 改成 (Hello, World!)
+    - `ysiw]` **單個單字** 可以將 (Hello, World!) 改成 ([Hello], World!)
+    - Visual mode 下, `S<div>` **選取範圍** 可以將 ([Hello], World!) 改成 <div>([Hello], World!)</div> 
+    - yss 整行 ysiw 單字 S 選取範圍
 * tabular
     - 用法 `:Tab /,`
 * vimwiki
