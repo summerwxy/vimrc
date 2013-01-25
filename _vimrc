@@ -136,3 +136,5 @@ nnoremap <F12> :GundoToggle<CR>
 " zen coding
 let g:use_zen_complete_tag = 1
 
+" set *.tpl filetype = html for snipmate
+au BufNewFile,BufRead *.tpl set filetype=html
