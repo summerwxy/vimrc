@@ -73,6 +73,8 @@ Plugins
     - `:Git [command]` = :!git [command]
 * Gundo
     - `F12` 切換 Gundo 畫面, 可以看到目前為止在本地修改的內容
+* indentLine
+    - 顯示 indent 的垂直線
 * Matrix Screensaver
     - `F9` 切換 screensaver
 * minibufexpl
