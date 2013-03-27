@@ -34,6 +34,7 @@ Remove Plugin
 1. Remove it from .gitmodules
 2. Remove it from .git/config
 3. Run git rm --cached vimfiles\bundle\module-name
+4. delete vimfiles\bundle\modile-name folder
 ```
 
 
@@ -71,8 +72,6 @@ Plugins
     - `<leader>sel` 執行目前這行的 SQL
 * fugitive
     - `:Git [command]` = :!git [command]
-* Git Gutter
-    - 用 Git 的情況下, 顯示 + - ~ 符號
 * Gundo
     - `F12` 切換 Gundo 畫面, 可以看到目前為止在本地修改的內容
 * indentLine
