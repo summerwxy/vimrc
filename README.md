@@ -40,8 +40,6 @@ Remove Plugin
 
 Plugins
 -------
-* AutoClose
-    - 包含 `( [ { " '` 這五項符號會自動補成一對
 * AutoComplPop
 
     To enable auto-popup for this completion, add following function to
@@ -82,6 +80,8 @@ Plugins
     - `F10` 切換是否顯示 minibufexpl
     - `ctrl+tab` 可以在打開的文件中切換
     - 在 minibufexpl 上按 `d` 可以關閉打開的文件
+* multiple cursors
+    - `ctrl+n `
 * nerdtree
     - `F11` 切換 nerdtree 畫面 
     - 設定 NERDTreeIgnore 可以過濾一些不想顯示的檔案

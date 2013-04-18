@@ -140,10 +140,4 @@ let g:use_zen_complete_tag = 1
 au BufNewFile,BufRead *.tpl set filetype=html
 
 
-" vim multiple cursors
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_next_key='<C-j>'
-let g:multi_cursor_prev_key='<C-k>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
 

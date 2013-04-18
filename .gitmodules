@@ -1,9 +1,6 @@
 [submodule "vimfiles/bundle/nerdtree"]
 	path = vimfiles/bundle/nerdtree
-        url = https://github.com/scrooloose/nerdtree.git
-[submodule "vimfiles/bundle/AutoClose"]
-	path = vimfiles/bundle/AutoClose
-	url = https://github.com/vim-scripts/AutoClose.git
+    url = https://github.com/scrooloose/nerdtree.git
 [submodule "vimfiles/bundle/xmledit"]
 	path = vimfiles/bundle/xmledit
 	url = https://github.com/sukima/xmledit.git
