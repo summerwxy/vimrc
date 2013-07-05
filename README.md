@@ -1,5 +1,5 @@
-﻿0_o's vimrc files
-==================
+﻿My vimrc files
+==============
 
 Install
 -------
@@ -141,5 +141,4 @@ Plugins
     - visual mode: `<c-y>c` code pretty
  
 * F8 切換 gvim 工具列, 功能列
-
 

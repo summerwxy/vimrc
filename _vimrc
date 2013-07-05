@@ -36,6 +36,7 @@ let mapleader = ","
 set t_Co=256
 syntax on
 filetype on			        " enables filetype detection
+filetype plugin on
 filetype plugin indent on	" enables filetype specific plugins
 colors inkpot 			    " colors
 set nowrap
@@ -139,4 +140,5 @@ let g:use_zen_complete_tag = 1
 " set *.tpl filetype = html for snipmate
 au BufNewFile,BufRead *.tpl set filetype=html
 
-
+" vimwiki
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'media'}
