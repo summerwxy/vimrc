@@ -70,7 +70,7 @@ source $VIMRUNTIME/menu.vim
 
 
 " NERD tree: F11 toggle
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 nmap <F11> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['.pyc$', '\~$']
 
