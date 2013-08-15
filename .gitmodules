@@ -10,6 +10,3 @@
 [submodule "vimfiles/bundle/vimwiki"]
 	path = vimfiles/bundle/vimwiki
 	url = https://github.com/vim-scripts/vimwiki.git
-[submodule "vimfiles/bundle/surround"]
-	path = vimfiles/bundle/surround
-	url = https://github.com/tpope/vim-surround.git

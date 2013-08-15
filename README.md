@@ -53,8 +53,7 @@ urls
 * nerdtree: https://github.com/scrooloose/nerdtree.git
 * power line: https://github.com/Lokaltog/vim-powerline.git
 * snipMate: https://github.com/msanders/snipmate.vim.git
-
-
+* surround: https://github.com/tpope/vim-surround.git
 
 
 
