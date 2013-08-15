@@ -48,9 +48,7 @@ urls
 * Gundo : http://github.com/sjl/gundo.vim.git
 * indentLine: https://github.com/Yggdroot/indentLine.git
 * matrix: https://github.com/uguu-org/vim-matrix-screensaver.git
-
-
-
+* minibufexpl: https://github.com/fholgado/minibufexpl.vim.git
 
 
 Plugins
