@@ -51,9 +51,7 @@ urls
 * minibufexpl: https://github.com/fholgado/minibufexpl.vim.git
 * multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
 * nerdtree: https://github.com/scrooloose/nerdtree.git
-* 
-
-
+* power line: https://github.com/Lokaltog/vim-powerline.git
 
 
 
