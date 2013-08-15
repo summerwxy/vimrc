@@ -37,26 +37,84 @@ call vundle#rc()
 " let Vundle manage Vundle required!
 Bundle 'gmarik/vundle'              
 
-" my bundles here
+" --- AutoComplPop ---
+"  TODO: 還必須在 snipmate.vim 加上一小段 code
 Bundle 'AutoComplPop'
+let g:acp_behaviorSnipmateLength = 1
+
+" --- color selector ---
 Bundle 'c9s/colorselector.vim'
+
+" --- css color ---
 Bundle 'ap/vim-css-color'
+
+" --- ctrlp ---
 Bundle 'kien/ctrlp.vim'
+
+" --- dbext ---
 Bundle 'dbext.vim'
+" dbext 連線設定
+" Any number of profiles (connections) can be configured using this basic format:
+"   let g:dbext_default_profile_<profile_name> = '<connection string>'
+" Microsoft SQL Server
+let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
+" SQLite
+let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
+
+" --- fugitive ---
 Bundle 'tpope/vim-fugitive'
+
+" --- gundo: F12 toggle ---
 Bundle 'sjl/gundo.vim'
+nnoremap <F12> :GundoToggle<CR>
+
+" --- indentLine ---
 Bundle 'Yggdroot/indentLine'
+
+" --- Matrix Screensaver ---
 Bundle 'uguu-org/vim-matrix-screensaver'
+nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
+
+" --- minibufexpl.vim: F10 toggle ---
 Bundle 'fholgado/minibufexpl.vim'
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1 
+map <F10> :MBEToggle<CR>
+
+" --- multiple cursors ---
 Bundle 'terryma/vim-multiple-cursors'
+
+" --- NERD tree: F11 toggle ---
 Bundle 'scrooloose/nerdtree'
+autocmd vimenter * if !argc() | NERDTree | endif
+nmap <F11> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['.pyc$', '\~$']
+
+" --- powerline ---
 Bundle 'Lokaltog/vim-powerline'
+set laststatus=2
+
+" --- snipmate ---
 Bundle 'msanders/snipmate.vim'
+
+" --- surround ---
 Bundle 'tpope/vim-surround'
+
+" --- tabular ---
 Bundle 'godlygeek/tabular'
+
+" --- vimwiki ---
 Bundle 'vimwiki'
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'media'}
+
+" --- xmledit ---
 Bundle 'sukima/xmledit'
+
+" --- zen coding ---
 Bundle 'mattn/zencoding-vim'
+let g:use_zen_complete_tag = 1
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -107,23 +165,6 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
 
-" NERD tree: F11 toggle
-autocmd vimenter * if !argc() | NERDTree | endif
-nmap <F11> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['.pyc$', '\~$']
-
-" minibufexpl.vim: F10 toggle
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
-map <F10> :TMiniBufExplorer<CR>
-    
-" AutoComplPop 還必須在 snipmate.vim 加上一小段 code
-let g:acp_behaviorSnipmateLength = 1
-
-" Matrix Screensaver
-nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
 
 " #1F-LVqua (Editor) [ptt.cc] 
 " load templates by file type
@@ -134,9 +175,6 @@ au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl
 " Jump between %VAR% placeholders in Insert mode with <Ctrl-p>
 " inoremap <c-p> <ESC>/%\u.\{-1,}%<cr>c/%/e<cr>
 
-
-" Powerline
-set laststatus=2
 
 
 " F8 顯示/隱藏 gvim 工具列與功能列
@@ -149,14 +187,6 @@ map <silent> <F8> :if &guioptions =~# 'T' <Bar>
 \endif<CR>
 
 
-" dbext 連線設定
-" Any number of profiles (connections) can be configured using this basic format:
-"   let g:dbext_default_profile_<profile_name> = '<connection string>'
-" Microsoft SQL Server
-let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
-" SQLite
-let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
- 
 
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
@@ -165,18 +195,9 @@ au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
     
 
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
-
 au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
 
-
-" F12 for Gundo
-nnoremap <F12> :GundoToggle<CR>
-
-" zen coding
-let g:use_zen_complete_tag = 1
 
 " set *.tpl filetype = html for snipmate
 au BufNewFile,BufRead *.tpl set filetype=html
 
-" vimwiki
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'media'}

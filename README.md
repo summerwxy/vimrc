@@ -6,35 +6,26 @@ Install
 ```
 cd <VIM_HOME>
 git clone https://github.com/summerwxy/vimrc.git
--- move all files in vimrc folder to <VIM_HOME>
-git reset --hard HEAD
-git submodule update --init
 ```
 
 Install New Plugin
 ------------------
 ```
-git submodule add http://github.com/path/the-plugins.git vimfiles/bundle/plugin-name
+add Bundle 'xxxx' to _vimrc
+run :BundleInstall
 ```
 
 Update Plugins
 --------------
 ```
-update and pull all submodules
-$ git submodule foreach git checkout master
-$ git submodule foreach git pull
-
-commit update
-$ git commit -a -m "update submodules"
+run :BundleInstall!
 ```
 
 Remove Plugin
 -------------
 ```
-1. Remove it from .gitmodules
-2. Remove it from .git/config
-3. Run git rm --cached vimfiles\bundle\module-name
-4. delete vimfiles\bundle\modile-name folder
+remove Bundle 'xxxx' from _vimrc
+run :BundleClean!
 ```
 
 Plugins
