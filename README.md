@@ -52,6 +52,15 @@ urls
 * multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
 * nerdtree: https://github.com/scrooloose/nerdtree.git
 * power line: https://github.com/Lokaltog/vim-powerline.git
+* snipMate: https://github.com/msanders/snipmate.vim.git
+
+
+
+
+
+
+
+
 
 
 
