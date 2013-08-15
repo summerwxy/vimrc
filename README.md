@@ -41,6 +41,8 @@ urls
 ----
 * AutoComplPop: https://github.com/vim-scripts/AutoComplPop.git
 * colorselector: https://github.com/c9s/colorselector.vim.git
+* css color: https://github.com/ap/vim-css-color.git
+
 
 Plugins
 -------
