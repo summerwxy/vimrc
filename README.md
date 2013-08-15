@@ -43,6 +43,10 @@ urls
 * colorselector: https://github.com/c9s/colorselector.vim.git
 * css color: https://github.com/ap/vim-css-color.git
 * ctrlp: https://github.com/kien/ctrlp.vim.git
+* dbext: https://github.com/vim-scripts/dbext.vim.git
+* fugitive: https://github.com/tpope/vim-fugitive.git
+* 
+
 
 
 

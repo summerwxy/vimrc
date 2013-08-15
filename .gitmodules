@@ -22,12 +22,6 @@
 [submodule "vimfiles/bundle/matrix"]
 	path = vimfiles/bundle/matrix
 	url = https://github.com/uguu-org/vim-matrix-screensaver.git
-[submodule "vimfiles/bundle/fugitive"]
-	path = vimfiles/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vimfiles/bundle/dbext"]
-	path = vimfiles/bundle/dbext
-	url = https://github.com/vim-scripts/dbext.vim.git
 [submodule "vimfiles/bundle/gundo"]
 	path = vimfiles/bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
