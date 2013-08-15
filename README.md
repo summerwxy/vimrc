@@ -49,6 +49,8 @@ urls
 * indentLine: https://github.com/Yggdroot/indentLine.git
 * matrix: https://github.com/uguu-org/vim-matrix-screensaver.git
 * minibufexpl: https://github.com/fholgado/minibufexpl.vim.git
+* multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
+
 
 
 Plugins

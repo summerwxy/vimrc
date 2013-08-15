@@ -22,6 +22,3 @@
 [submodule "vimfiles/bundle/surround"]
 	path = vimfiles/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "vimfiles/bundle/vim-multiple-cursors"]
-	path = vimfiles/bundle/vim-multiple-cursors
-	url = https://github.com/terryma/vim-multiple-cursors.git
