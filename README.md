@@ -47,8 +47,7 @@ urls
 * fugitive: https://github.com/tpope/vim-fugitive.git
 * Gundo : http://github.com/sjl/gundo.vim.git
 * indentLine: https://github.com/Yggdroot/indentLine.git
-
-
+* matrix: https://github.com/uguu-org/vim-matrix-screensaver.git
 
 
 
