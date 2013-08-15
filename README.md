@@ -37,6 +37,10 @@ Remove Plugin
 4. delete vimfiles\bundle\modile-name folder
 ```
 
+urls
+----
+* AutoComplPop: https://github.com/vim-scripts/AutoComplPop.git
+* colorselector: https://github.com/c9s/colorselector.vim.git
 
 Plugins
 -------

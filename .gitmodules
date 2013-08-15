@@ -13,9 +13,6 @@
 [submodule "vimfiles/bundle/minibufexpl"]
 	path = vimfiles/bundle/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "vimfiles/bundle/AutoComplPop"]
-	path = vimfiles/bundle/AutoComplPop
-	url = https://github.com/vim-scripts/AutoComplPop.git
 [submodule "vimfiles/bundle/tabular"]
 	path = vimfiles/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -25,9 +22,6 @@
 [submodule "vimfiles/bundle/matrix"]
 	path = vimfiles/bundle/matrix
 	url = https://github.com/uguu-org/vim-matrix-screensaver.git
-[submodule "vimfiles/bundle/colorselector"]
-	path = vimfiles/bundle/colorselector
-	url = https://github.com/c9s/colorselector.vim.git
 [submodule "vimfiles/bundle/csscolor"]
 	path = vimfiles/bundle/csscolor
 	url = https://github.com/ap/vim-css-color.git
