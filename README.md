@@ -45,8 +45,7 @@ urls
 * ctrlp: https://github.com/kien/ctrlp.vim.git
 * dbext: https://github.com/vim-scripts/dbext.vim.git
 * fugitive: https://github.com/tpope/vim-fugitive.git
-* 
-
+* Gundo : http://github.com/sjl/gundo.vim.git
 
 
 
