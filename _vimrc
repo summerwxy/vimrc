@@ -28,8 +28,6 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-" call Pathogen.vim
-call pathogen#infect()
 
 " 0_o's Settings
 let mapleader = ","
