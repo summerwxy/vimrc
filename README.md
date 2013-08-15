@@ -54,7 +54,7 @@ urls
 * power line: https://github.com/Lokaltog/vim-powerline.git
 * snipMate: https://github.com/msanders/snipmate.vim.git
 * surround: https://github.com/tpope/vim-surround.git
-
+* tabular: https://github.com/godlygeek/tabular.git
 
 
 
