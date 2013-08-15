@@ -50,6 +50,20 @@ urls
 * matrix: https://github.com/uguu-org/vim-matrix-screensaver.git
 * minibufexpl: https://github.com/fholgado/minibufexpl.vim.git
 * multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
+* nerdtree: https://github.com/scrooloose/nerdtree.git
+* 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
