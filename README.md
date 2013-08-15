@@ -37,30 +37,6 @@ Remove Plugin
 4. delete vimfiles\bundle\modile-name folder
 ```
 
-urls
-----
-* AutoComplPop: https://github.com/vim-scripts/AutoComplPop.git
-* colorselector: https://github.com/c9s/colorselector.vim.git
-* css color: https://github.com/ap/vim-css-color.git
-* ctrlp: https://github.com/kien/ctrlp.vim.git
-* dbext: https://github.com/vim-scripts/dbext.vim.git
-* fugitive: https://github.com/tpope/vim-fugitive.git
-* Gundo : http://github.com/sjl/gundo.vim.git
-* indentLine: https://github.com/Yggdroot/indentLine.git
-* matrix: https://github.com/uguu-org/vim-matrix-screensaver.git
-* minibufexpl: https://github.com/fholgado/minibufexpl.vim.git
-* multiple-cursors: https://github.com/terryma/vim-multiple-cursors.git
-* nerdtree: https://github.com/scrooloose/nerdtree.git
-* power line: https://github.com/Lokaltog/vim-powerline.git
-* snipMate: https://github.com/msanders/snipmate.vim.git
-* surround: https://github.com/tpope/vim-surround.git
-* tabular: https://github.com/godlygeek/tabular.git
-* vimwiki: https://github.com/vim-scripts/vimwiki.git 
-* xmledit: https://github.com/sukima/xmledit.git
-* zencoding: https://github.com/mattn/zencoding-vim.git
-
-
-
 Plugins
 -------
 * AutoComplPop

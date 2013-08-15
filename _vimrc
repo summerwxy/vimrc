@@ -28,12 +28,52 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
+" ===== Start of Vundle =====
+filetype off                        " required!
+set rtp+=.\vimfiles\bundle\vundle
+call vundle#rc()
+
+
+" let Vundle manage Vundle required!
+Bundle 'gmarik/vundle'              
+
+" my bundles here
+Bundle 'AutoComplPop'
+Bundle 'c9s/colorselector.vim'
+Bundle 'ap/vim-css-color'
+Bundle 'kien/ctrlp.vim'
+Bundle 'dbext.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'sjl/gundo.vim'
+Bundle 'Yggdroot/indentLine'
+Bundle 'uguu-org/vim-matrix-screensaver'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
+Bundle 'vimwiki'
+Bundle 'sukima/xmledit'
+Bundle 'mattn/zencoding-vim'
+
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+" ===== End of Vundle =====
+
 
 " 0_o's Settings
 let mapleader = ","
 set t_Co=256
 syntax on
-filetype on			        " enables filetype detection
+" filetype on			        " enables filetype detection
 filetype plugin on
 filetype plugin indent on	" enables filetype specific plugins
 colors inkpot 			    " colors
@@ -68,7 +108,7 @@ source $VIMRUNTIME/menu.vim
 
 
 " NERD tree: F11 toggle
-"autocmd vimenter * if !argc() | NERDTree | endif
+autocmd vimenter * if !argc() | NERDTree | endif
 nmap <F11> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['.pyc$', '\~$']
 
