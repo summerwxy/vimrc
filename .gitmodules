@@ -1,9 +1,0 @@
-[submodule "vimfiles/bundle/xmledit"]
-	path = vimfiles/bundle/xmledit
-	url = https://github.com/sukima/xmledit.git
-[submodule "vimfiles/bundle/zencoding"]
-	path = vimfiles/bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
-[submodule "vimfiles/bundle/vimwiki"]
-	path = vimfiles/bundle/vimwiki
-	url = https://github.com/vim-scripts/vimwiki.git
