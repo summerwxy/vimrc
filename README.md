@@ -5,6 +5,9 @@ Install
 -------
 ```
 cd <VIM_HOME>
+# install Vundle first
+git clone https://github.com/gmarik/vundle.git vimfiles/bundle/vundle
+# get my vimrc file
 git clone https://github.com/summerwxy/vimrc.git
 ```
 
@@ -12,20 +15,20 @@ Install New Plugin
 ------------------
 ```
 add Bundle 'xxxx' to _vimrc
-run :BundleInstall
+run :BundleInstall in Vim
 ```
 
 Update Plugins
 --------------
 ```
-run :BundleInstall!
+run :BundleInstall! in Vim
 ```
 
 Remove Plugin
 -------------
 ```
 remove Bundle 'xxxx' from _vimrc
-run :BundleClean!
+run :BundleClean! in Vim
 ```
 
 Plugins
