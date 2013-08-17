@@ -34,7 +34,7 @@ run :BundleClean! in Vim
 Plugins
 -------
 * AutoComplPop
-
+    - 用 Windows 路徑會在, [home]\.vim\bundle\ 裡面
     To enable auto-popup for this completion, add following function to
     plugin/snipMate.vim:
     ```
@@ -61,6 +61,32 @@ Plugins
 * dbext
     - `<leader>se` 執行選取的 SQL
     - `<leader>sel` 執行目前這行的 SQL
+* emmet
+    - insert mode: `<c-y>,` 產生 html tag 
+    - visual mode: `<c-y>,` 快速編輯
+        ```
+        Write as below.
+
+        test1
+        test2
+        test3
+
+        Then do visual select(line wize) and type |<C-Y>,|.
+        If you request 'Tag:', then type 'ul>li*'.
+
+        <ul>
+            <li>test1</li>
+            <li>test2</li>
+            <li>test3</li>
+        </ul>
+        ```
+    - insert mode: `<c-y>d` 選取所在的 tag 裡面所有內容
+    - insert mode: `<c-y>i` 作用在 img tag 上, 取得當前圖片的大小
+    - insert mode: `<c-y>k` 移除整個 tag, 包含內容
+    - insert mode: `<c-y>j` split/join tag
+    - insert mode: `<c-y>/` comment
+    - insert mode: `<c-y>a` 作用在網址上, 產生成 a tag
+    - visual mode: `<c-y>c` code pretty
 * fugitive
     - `:Git [command]` = :!git [command]
 * Gundo
@@ -88,6 +114,8 @@ Plugins
     - ruby: =b, y, rb, beg, req, #, end, case, when, def, deft, if, ife, elsif, unless, while, for, until, cla, cla-, mod, r, w, rw, Enum, Comp, Forw-, defs, defmm, defd, defds, am, app, usai, usau, array, hash, file, Dir, dir, deli, fil, flao, zip, dow, ste, tim, upt, loo, ea, eadeab, eac-, eai, eaid, eak, eakd, eal, eald, eap, eapd, eas-, easd-, eav, eavd, eawi, eawid, reve, reved, inj, injd, map, mapd, mapwi-, sor, sorb, ran, all, any, cl, col, cold, det, detd, fet, fin, find, fina, finad, gre, sub, sca, scad, max, min, par, pard, rej, rejd, sel, seld, lam, do, :, ope, patfh, unif, optp, opt, tc, ts, as, ase, asne, asid, asio, asko, asn, asnn, asm, asnm, aso, asr, asnr, asrt, ass, asns, ast, asnt, fl, bm-, rep, Md, Ml, deec, Pn-, tra, xml-, xpa, clafn, sinc, nam, tas
     - snippet: snip, msnip
     - bim: header, guard, f, for, wh, if, ife
+* supertab
+    - 用 `tab` 就對了
 * surround
     - 主要命令有 `cs`, `ds`, `yss`, `ysiw`, `S`
     - `cs"'` 可以將 "Hello, World!" 改成 'Hello, World!'
@@ -106,32 +134,6 @@ Plugins
     - 類似 AutoClose, 可以自動補齊 html tag
     - 還有 html tag 屬性的 list 可以用
     - `<Leader>d` 可以刪除, 目前所在的 tag 本身
-* Zen Coding
-    - insert mode: `<c-y>,` 產生 html tag 
-    - visual mode: `<c-y>,` 快速編輯
-        ```
-        Write as below.
-
-        test1
-        test2
-        test3
-
-        Then do visual select(line wize) and type |<C-Y>,|.
-        If you request 'Tag:', then type 'ul>li*'.
-
-        <ul>
-            <li>test1</li>
-            <li>test2</li>
-            <li>test3</li>
-        </ul>
-        ```
-    - insert mode: `<c-y>d` 選取所在的 tag 裡面所有內容
-    - insert mode: `<c-y>i` 作用在 img tag 上, 取得當前圖片的大小
-    - insert mode: `<c-y>k` 移除整個 tag, 包含內容
-    - insert mode: `<c-y>j` split/join tag
-    - insert mode: `<c-y>/` comment
-    - insert mode: `<c-y>a` 作用在網址上, 產生成 a tag
-    - visual mode: `<c-y>c` code pretty
  
 * F8 切換 gvim 工具列, 功能列
 

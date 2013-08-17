@@ -30,7 +30,7 @@ endfunction
 
 " ===== Start of Vundle =====
 filetype off                        " required!
-set rtp+=.\vimfiles\bundle\vundle
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 
@@ -60,6 +60,9 @@ Bundle 'dbext.vim'
 let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
 " SQLite
 let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
+
+" --- emmet: old name "zen coding" ---
+Bundle 'mattn/emmet-vim'
 
 " --- fugitive ---
 Bundle 'tpope/vim-fugitive'
@@ -97,7 +100,10 @@ Bundle 'Lokaltog/vim-powerline'
 set laststatus=2
 
 " --- snipmate ---
-Bundle 'msanders/snipmate.vim'
+Bundle 'ervandew/snipmate.vim'
+
+" --- supertab ---
+Bundle 'ervandew/supertab'
 
 " --- surround ---
 Bundle 'tpope/vim-surround'
@@ -112,9 +118,9 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'med
 " --- xmledit ---
 Bundle 'sukima/xmledit'
 
-" --- zen coding ---
-Bundle 'mattn/zencoding-vim'
-let g:use_zen_complete_tag = 1
+" --- xptemplate ---
+Bundle 'drmingdrmer/xptemplate'
+
 
 " Brief help
 " :BundleList          - list configured bundles
