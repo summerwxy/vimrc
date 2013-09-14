@@ -87,6 +87,9 @@ Plugins
     - insert mode: `<c-y>/` comment
     - insert mode: `<c-y>a` 作用在網址上, 產生成 a tag
     - visual mode: `<c-y>c` code pretty
+* Evervim
+    - 安裝方式參考 :help evervim
+    - `F9` 打開 :EvervimNotebookList
 * fugitive
     - `:Git [command]` = :!git [command]
 * Gundo
@@ -94,7 +97,7 @@ Plugins
 * indentLine
     - 顯示 indent 的垂直線
 * Matrix Screensaver
-    - `F9` 切換 screensaver
+    - `F8` 切換 screensaver
 * minibufexpl
     - `F10` 切換是否顯示 minibufexpl
     - `ctrl+tab` 可以在打開的文件中切換
@@ -135,5 +138,5 @@ Plugins
     - 還有 html tag 屬性的 list 可以用
     - `<Leader>d` 可以刪除, 目前所在的 tag 本身
  
-* F8 切換 gvim 工具列, 功能列
+* F7 切換 gvim 工具列, 功能列
 

@@ -64,6 +64,12 @@ let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=tai
 " --- emmet: old name "zen coding" ---
 Bundle 'mattn/emmet-vim'
 
+
+" --- evervim ---
+Bundle 'kakkyz81/evervim'
+let g:evervim_devtoken='S=s8:U=d5cbc:E=148731dab28:C=1411b6c7f2e:P=1cd:A=en-devtoken:V=2:H=6a90839a09e93e09fde77a07e44fffa9'
+nmap <F9> :NERDTreeClose<CR>:EvervimNotebookList<CR>
+
 " --- fugitive ---
 Bundle 'tpope/vim-fugitive'
 
@@ -76,7 +82,7 @@ Bundle 'Yggdroot/indentLine'
 
 " --- Matrix Screensaver ---
 Bundle 'uguu-org/vim-matrix-screensaver'
-nmap <F9> :NERDTreeClose<CR>:CMiniBufExplorer<CR>:Matrix<CR>
+nmap <F8> :NERDTreeClose<CR>:MBEClose<CR>:Matrix<CR>
 
 " --- minibufexpl.vim: F10 toggle ---
 Bundle 'fholgado/minibufexpl.vim'
@@ -120,6 +126,7 @@ Bundle 'sukima/xmledit'
 
 " --- xptemplate ---
 Bundle 'drmingdrmer/xptemplate'
+
 
 
 " Brief help
@@ -183,8 +190,8 @@ au BufNewFile *.py 0r $VIMRUNTIME/../vimfiles/templates/py.tpl
 
 
 
-" F8 顯示/隱藏 gvim 工具列與功能列
-map <silent> <F8> :if &guioptions =~# 'T' <Bar>
+" F7 顯示/隱藏 gvim 工具列與功能列
+map <silent> <F7> :if &guioptions =~# 'T' <Bar>
 \set guioptions-=T <Bar>
 \set guioptions-=m <Bar>
 \else <Bar>
