@@ -42,6 +42,10 @@ Bundle 'gmarik/vundle'
 Bundle 'AutoComplPop'
 let g:acp_behaviorSnipmateLength = 1
 
+" --- coffee script ---
+Bundle 'kchmck/vim-coffee-script'
+au BufWritePost *.coffee silent make! | redraw!
+
 " --- color selector ---
 Bundle 'c9s/colorselector.vim'
 

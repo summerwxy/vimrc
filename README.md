@@ -47,7 +47,8 @@ Plugins
         return snips
     endf
     ```
-
+* Coffee Script
+    - 保存 *.coffee 就會自動編譯成 *.js 在同路徑下
 * ColorSelector
     - `:SelectColorS` 打開選擇清單 
     - `C-n` 下一個
