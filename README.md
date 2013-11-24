@@ -8,7 +8,11 @@ cd <VIM_HOME>
 # install Vundle first
 git clone https://github.com/gmarik/vundle.git vimfiles/bundle/vundle
 # get my vimrc file
-git clone https://github.com/summerwxy/vimrc.git
+git init
+git remote add origin https://github.com/summerwxy/vimrc.git
+git fetch
+git branch master origin/master
+git checkout master
 ```
 
 Install New Plugin
