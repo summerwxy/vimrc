@@ -30,7 +30,8 @@ endfunction
 
 " ===== Start of Vundle =====
 filetype off                        " required!
-set rtp+=~/.vim/bundle/vundle/
+" set rtp+=~/.vim/bundle/vundle/
+set rtp+=vimfiles/bundle/vundle/
 call vundle#rc()
 
 
