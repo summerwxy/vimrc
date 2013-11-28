@@ -4,10 +4,11 @@
 Install
 -------
 ```
-cd <VIM_HOME>
 # install Vundle first
-git clone https://github.com/gmarik/vundle.git vimfiles/bundle/vundle
+cd <HOME>
+git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 # get my vimrc file
+cd <VIM_HOME>
 git init
 git remote add origin https://github.com/summerwxy/vimrc.git
 git fetch
