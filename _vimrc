@@ -215,6 +215,7 @@ au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
 au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
 
+au FileType java map <F2> <Esc>:w<CR>:!javac "%:p" && java -cp "%:p:h" "%:t:r"<CR>
 
 " set *.tpl filetype = html for snipmate
 au BufNewFile,BufRead *.tpl set filetype=html
