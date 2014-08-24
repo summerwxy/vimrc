@@ -206,7 +206,7 @@ map <silent> <F7> :if &guioptions =~# 'T' <Bar>
 \endif<CR>
 
 
-
+" hotkey
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
 au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
