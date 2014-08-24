@@ -114,7 +114,7 @@ set laststatus=2
 Bundle 'ervandew/snipmate.vim'
 
 " --- supertab ---
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
 
 " --- surround ---
 Bundle 'tpope/vim-surround'
@@ -130,6 +130,7 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'med
 Bundle 'sukima/xmledit'
 
 " --- xptemplate ---
+
 Bundle 'drmingdrmer/xptemplate'
 
 
