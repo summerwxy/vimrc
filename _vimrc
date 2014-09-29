@@ -133,6 +133,10 @@ Bundle 'sukima/xmledit'
 
 Bundle 'drmingdrmer/xptemplate'
 
+" --- flappyvird ---
+
+Bundle 'mattn/flappyvird-vim'
+
 
 
 " Brief help
@@ -212,6 +216,8 @@ au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
 au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
 au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
     
+au BufNewFile,BufRead *.R map <F2> <Esc>:w<CR>\aa
+au BufNewFile,BufRead *.R imap <F2> <Esc>:w<CR>\aa
 
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
 au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
