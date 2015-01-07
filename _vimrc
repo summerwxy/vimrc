@@ -222,6 +222,9 @@ au BufNewFile,BufRead *.R imap <F2> <Esc>:w<CR>\aa
 au BufNewFile,BufRead *.js map <F2> <Esc>:w<CR>:!node "%"<CR>
 au BufNewFile,BufRead *.js imap <F2> <Esc>:w<CR>:!node "%"<CR>
 
+au BufNewFile,BufRead *.ahk map <F2> <Esc>:w<CR>:!autohotkey "%"<CR>
+au BufNewFile,BufRead *.ahk imap <F2> <Esc>:w<CR>:!autohotkey "%"<CR>
+
 au FileType java map <F2> <Esc>:w<CR>:!javac "%:p" && java -cp "%:p:h" "%:t:r"<CR>
 
 " set *.tpl filetype = html for snipmate
