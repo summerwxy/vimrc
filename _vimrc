@@ -44,8 +44,8 @@ Bundle 'AutoComplPop'
 let g:acp_behaviorSnipmateLength = 1
 
 " --- coffee script ---
-Bundle 'kchmck/vim-coffee-script'
-au BufWritePost *.coffee silent make! | redraw!
+" Bundle 'kchmck/vim-coffee-script'
+" au BufWritePost *.coffee silent make! | redraw!
 
 " --- color selector ---
 Bundle 'c9s/colorselector.vim'
@@ -64,7 +64,7 @@ Bundle 'dbext.vim'
 " Microsoft SQL Server
 let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvname=192.168.0.18:dbname=iwill:replace_title=1'
 " SQLite
-let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
+" let g:dbext_default_profile_sqlite_for_taifex_at_iwill = 'type=SQLITE:dbname=taifex.db'
 
 " --- emmet: old name "zen coding" ---
 Bundle 'mattn/emmet-vim'
@@ -130,14 +130,17 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.mkd': 'markdown', '.wiki': 'med
 Bundle 'sukima/xmledit'
 
 " --- xptemplate ---
-
 Bundle 'drmingdrmer/xptemplate'
 
 " --- flappyvird ---
-
 Bundle 'mattn/flappyvird-vim'
 
 
+" --- Typescript Syntax for Vim ---
+Bundle 'leafgarland/typescript-vim'
+
+" --- A vim plugin for Typescript ---
+Bundle 'Quramy/tsuquyomi'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -213,8 +216,6 @@ map <silent> <F7> :if &guioptions =~# 'T' <Bar>
 " hotkey
 au BufNewFile,BufRead *.py map <F2> <Esc>:w<CR>:!python "%"<CR>
 au BufNewFile,BufRead *.py imap <F2> <Esc>:w<CR>:!python "%"<CR>
-au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
-au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
 
 au BufNewFile,BufRead *.R map <F2> <Esc>:w<CR>\aa
 au BufNewFile,BufRead *.R imap <F2> <Esc>:w<CR>\aa
@@ -228,7 +229,18 @@ au BufNewFile,BufRead *.groovy imap <F2> <Esc>:w<CR>:!groovy "%"<CR>
 au BufNewFile,BufRead *.ahk map <F2> <Esc>:w<CR>:!autohotkey "%"<CR>
 au BufNewFile,BufRead *.ahk imap <F2> <Esc>:w<CR>:!autohotkey "%"<CR>
 
+au BufNewFile,BufRead *.rb map <F2> <Esc>:w<CR>:!ruby "%"<CR>
+au BufNewFile,BufRead *.rb imap <F2> <Esc>:w<CR>:!ruby "%"<CR>
+
+au BufNewFile,BufRead *.dot map <F2> <Esc>:w<CR>:!dot -Tpng "%" -o foo.bar.png<CR>:!foo.bar.png<CR>
+au BufNewFile,BufRead *.dot imap <F2> <Esc>:w<CR>:!dot -Tpng "%" -o foo.bar.png<CR>:!foo.bar.png<CR>
+
 au FileType java map <F2> <Esc>:w<CR>:!javac "%:p" && java -cp "%:p:h" "%:t:r"<CR>
+
+au FileType python setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType AutoHotkey setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType ruby setl shiftwidth=2 softtabstop=2 tabstop=2
+
 
 " set *.tpl filetype = html for snipmate
 au BufNewFile,BufRead *.tpl set filetype=html
