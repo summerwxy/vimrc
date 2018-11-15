@@ -43,10 +43,6 @@ Bundle 'gmarik/vundle'
 Bundle 'AutoComplPop'
 let g:acp_behaviorSnipmateLength = 1
 
-" --- coffee script ---
-" Bundle 'kchmck/vim-coffee-script'
-" au BufWritePost *.coffee silent make! | redraw!
-
 " --- color selector ---
 Bundle 'c9s/colorselector.vim'
 
@@ -70,17 +66,9 @@ let g:dbext_default_profile_SQLSRV = 'type=SQLSRV:user=sa:passwd=123456_abc:srvn
 Bundle 'mattn/emmet-vim'
 
 
-" --- evervim ---
-Bundle 'kakkyz81/evervim'
-let g:evervim_devtoken='S=s8:U=d5cbc:E=148731dab28:C=1411b6c7f2e:P=1cd:A=en-devtoken:V=2:H=6a90839a09e93e09fde77a07e44fffa9'
-nmap <F9> :NERDTreeClose<CR>:EvervimNotebookList<CR>
-
 " --- fugitive ---
 Bundle 'tpope/vim-fugitive'
 
-" --- gundo: F12 toggle ---
-Bundle 'sjl/gundo.vim'
-nnoremap <F12> :GundoToggle<CR>
 
 " --- indentLine ---
 Bundle 'Yggdroot/indentLine'

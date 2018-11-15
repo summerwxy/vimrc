@@ -52,8 +52,6 @@ Plugins
         return snips
     endf
     ```
-* Coffee Script
-    - 保存 *.coffee 就會自動編譯成 *.js 在同路徑下
 * ColorSelector
     - `:SelectColorS` 打開選擇清單 
     - `C-n` 下一個
@@ -93,13 +91,8 @@ Plugins
     - insert mode: `<c-y>/` comment
     - insert mode: `<c-y>a` 作用在網址上, 產生成 a tag
     - visual mode: `<c-y>c` code pretty
-* Evervim
-    - 安裝方式參考 :help evervim
-    - `F9` 打開 :EvervimNotebookList
 * fugitive
     - `:Git [command]` = :!git [command]
-* Gundo
-    - `F12` 切換 Gundo 畫面, 可以看到目前為止在本地修改的內容
 * indentLine
     - 顯示 indent 的垂直線
 * Matrix Screensaver
@@ -108,7 +101,7 @@ Plugins
     - `F10` 切換是否顯示 minibufexpl
     - `ctrl+tab` 可以在打開的文件中切換
     - 在 minibufexpl 上按 `d` 可以關閉打開的文件
-* multiple cursors
+[[*]] multiple cursors
     - `ctrl+n `
 * nerdtree
     - `F11` 切換 nerdtree 畫面 
