@@ -4,29 +4,37 @@ source $VIMRUNTIME/mswin.vim
 behave mswin
 
 set diffexpr=MyDiff()
+
 function MyDiff()
-  let opt = '-a --binary '
-  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
-  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
-  let arg1 = v:fname_in
-  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
-  let arg2 = v:fname_new
-  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
-  let arg3 = v:fname_out
-  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
-  let eq = ''
-  if $VIMRUNTIME =~ ' '
-    if &sh =~ '\<cmd'
-      let cmd = '""' . $VIMRUNTIME . '\diff"'
-      let eq = '"'
-    else
-      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
-    endif
-  else
-    let cmd = $VIMRUNTIME . '\diff'
-  endif
-  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+   let opt = '-a --binary '
+   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+   if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+   let arg1 = v:fname_in
+   if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+   let arg2 = v:fname_new
+   if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+   let arg3 = v:fname_out
+   if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+   if $VIMRUNTIME =~ ' '
+     if &sh =~ '\<cmd'
+       if empty(&shellxquote)
+         let l:shxq_sav = ''
+         set shellxquote&
+       endif
+       let cmd = '"' . $VIMRUNTIME . '\diff"'
+     else
+       let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+     endif
+   else
+     let cmd = $VIMRUNTIME . '\diff'
+   endif
+   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3
+   if exists('l:shxq_sav')
+     let &shellxquote=l:shxq_sav
+   endif
 endfunction
+
+
 
 " ===== Start of Vundle =====
 filetype off                        " required!
@@ -39,7 +47,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'              
 
 " --- AutoComplPop ---
-"  TODO: 還必須在 snipmate.vim 加上一小段 code
+"  TODO: 還必須在 snipmate.vim 加上一小段 code 
+"  https://github.com/vim-scripts/AutoComplPop
+"  snipmate 是另外一個 plugin 位置可能在 ~\.vim\bundle\snipmate.vim\plugin
 Bundle 'AutoComplPop'
 let g:acp_behaviorSnipmateLength = 1
 

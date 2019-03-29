@@ -15,6 +15,7 @@ set gfn=Source_Code_Pro:h14
 set noincsearch
 set nobackup
 set foldmethod=manual
+set noundofile
 
 
 " The commands in this are executed when the GUI is started.
